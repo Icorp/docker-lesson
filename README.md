@@ -11,4 +11,4 @@ __Goals To learn :__
 
 __Project Scheme:__
 
-![alt text](https://github.com/Icorp/docker-lesson/git-images/main/project-scheme.png?raw=true)
+![Screenshot](git-images/project_scheme.png)
