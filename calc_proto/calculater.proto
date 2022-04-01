@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+option go_package = "github.com/Icorp/docker-lesson/calc_proto";
+
+package calc_proto;
+
+message CalcRequest {
+  int64 a = 1;
+  int64 b = 2;
+}
+
+message CalcResponse {
+  int64 result = 1;
+}
+
+service AddService {
+  rpc Add(CalcRequest) returns (CalcResponse){};
+  rpc Subtract(CalcRequest) returns (CalcResponse){};
+  rpc Multiply(CalcRequest) returns (CalcResponse){};
+  rpc Divide(CalcRequest) returns (CalcResponse){};
+}
