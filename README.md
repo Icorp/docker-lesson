@@ -15,6 +15,5 @@ __Project Scheme:__
 
 Documentation:
 1) GRPC genereted code
-
-`protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative proto/calculater.proto
-`
+1.1) change directory to calc_proto
+1.2) run `protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative calculater.proto`
