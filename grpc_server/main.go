@@ -1,7 +1,7 @@
 package main
 
 import (
-	context "context"
+	"context"
 	"fmt"
 	proto "github.com/Icorp/docker-lesson/calc_proto"
 	"google.golang.org/grpc"
@@ -9,7 +9,7 @@ import (
 )
 
 type server struct {
-	proto.UnimplementedAddServiceServer
+	proto.UnimplementedCalcServiceServer
 }
 
 func (s *server) Add(ctx context.Context, request *proto.CalcRequest) (*proto.CalcResponse, error) {
@@ -42,7 +42,7 @@ func main() {
 	srv := grpc.NewServer()
 
 	fmt.Println("GRPC Server is running on port :4040")
-	proto.RegisterAddServiceServer(srv, &server{})
+	proto.RegisterCalcServiceServer(srv, &server{})
 	if e := srv.Serve(listener); e != nil {
 		panic(e)
 	}

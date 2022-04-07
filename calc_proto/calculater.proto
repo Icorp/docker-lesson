@@ -13,7 +13,7 @@ message CalcResponse {
   int64 result = 1;
 }
 
-service AddService {
+service CalcService {
   rpc Add(CalcRequest) returns (CalcResponse){};
   rpc Subtract(CalcRequest) returns (CalcResponse){};
   rpc Multiply(CalcRequest) returns (CalcResponse){};
