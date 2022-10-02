@@ -12,8 +12,3 @@ __Goals To learn :__
 __Project Scheme:__
 
 ![Screenshot](git-images/project_scheme.png)
-
-Documentation:
-1) GRPC genereted code
-1.1) change directory to calc_proto
-1.2) run `protoc --go_out=. --go_opt=paths=source_relative --go-grpc_out=. --go-grpc_opt=paths=source_relative calculater.proto`
